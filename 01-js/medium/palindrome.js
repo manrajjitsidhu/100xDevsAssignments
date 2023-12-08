@@ -4,6 +4,20 @@
 */
 
 function isPalindrome(str) {
+  str1=str.toLowerCase();
+  str1=str1.replace(/[^a-z]/g, "");
+  str2=str.toLowerCase();
+  str2=str2.replace(/[^a-z]/g, "");
+  split_str1=str1.split("");
+  r_split_str1=split_str1.reverse();
+  reversed_str1=r_split_str1.join("");
+  console.log()
+  if(reversed_str1==str2){
+    return true;}
+    else
+    {
+      return false;
+    }
   return true;
 }
 
